@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 
 function M_Content() {
+  return (
+    <div >
+      <section className="home">
+        <div className="text">Dashboard Sidebar</div>
+      </section>
+    </div>
+  );
+}
 
-    return (
-        <div>
-            <h1>hola contenido principal</h1>
-        </div>
-    );
-
-
-
-
-} export default M_Content;
+export default M_Content;
