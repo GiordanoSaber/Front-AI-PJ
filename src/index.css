@@ -4,5 +4,13 @@
 
 
 .custom-container {
-    height: calc(400vh - 4rem); /* Ajusta la altura según tus necesidades */
-  }
+  height: calc(400vh - 4rem);
+  /* Ajusta la altura según tus necesidades */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
