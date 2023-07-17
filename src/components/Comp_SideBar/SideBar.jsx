@@ -1,83 +1,74 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function SideBar() {
   return (
-    <nav className="sidebar">
-      <header>
-        <div className="image-text">
-          <span className="image">
-            {/* <img src="logo.png" alt=""> */}
-          </span>
+    <div>
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
 
-          <div className="text logo-text">
-            <span className="name">TomTom</span>
-            <span className="profession">New Edge</span>
+      <div class="min-h-screen flex flex-row bg-gray-100">
+        <div class="flex flex-col w-56 bg-white rounded-r-3xl overflow-hidden">
+          <div class="flex items-center justify-center h-20 shadow-md">
+            <h1 class="text-3xl uppercase text-indigo-500">Logo</h1>
           </div>
-        </div>
-      </header>
-
-      <div className="menu-bar">
-        <div className="menu">
-          <li className="search-box">
-            <i className="bx bx-search icon"></i>
-            <input type="text" placeholder="Search..." />
-          </li>
-
-          <ul className="menu-links">
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-home-alt icon"></i>
-                <span className="text nav-text">Dashboard</span>
+          <ul class="flex flex-col py-4">
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-home"></i></span>
+                <span class="text-sm font-medium">Dashboard</span>
               </a>
             </li>
+            <li>
+              <Link to="/Notes" className="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800 ">
+                
+                  <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-music"></i></span>
+                  <span class="text-sm font-medium">Notes</span>
+               
+              </Link>
 
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-bar-chart-alt-2 icon"></i>
-                <span className="text nav-text">Analytics</span>
+            </li>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-drink"></i></span>
+                <span class="text-sm font-medium">Drink</span>
               </a>
             </li>
-
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-bell icon"></i>
-                <span className="text nav-text">Notifications</span>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-shopping-bag"></i></span>
+                <span class="text-sm font-medium">Shopping</span>
               </a>
             </li>
-
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-pie-chart-alt icon"></i>
-                <span className="text nav-text">Stats</span>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
+                <span class="text-sm font-medium">Chat</span>
               </a>
             </li>
-
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-heart icon"></i>
-                <span className="text nav-text">Favourites</span>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-user"></i></span>
+                <span class="text-sm font-medium">Profile</span>
               </a>
             </li>
-
-            <li className="nav-link">
-              <a href="#">
-                <i className="bx bx-wallet icon"></i>
-                <span className="text nav-text">Money</span>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-bell"></i></span>
+                <span class="text-sm font-medium">Notifications</span>
+                <span class="ml-auto mr-6 text-sm bg-red-100 rounded-full px-3 py-px text-red-500">5</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-log-out"></i></span>
+                <span class="text-sm font-medium">Logout</span>
               </a>
             </li>
           </ul>
         </div>
-
-        <div className="bottom-content">
-          <li>
-            <a href="#">
-              <i className="bx bx-log-out icon"></i>
-              <span className="text nav-text">Logout</span>
-            </a>
-          </li>
-        </div>
       </div>
-    </nav>
+    </div>
+
   );
 }
 
